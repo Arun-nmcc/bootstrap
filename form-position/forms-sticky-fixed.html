@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Forms Example</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center">Bootstrap Forms</h1>
+
+        <!-- What: A form with grouped and styled input fields using Bootstrap.
+             Why: Enhances user experience with consistent spacing, alignment, and styling. -->
+
+        <!-- Form Example -->
+        <form class="mt-4">
+            <!-- Form Group -->
+            <div class="form-group mb-3">
+                <!-- What: 'form-group' groups label and input fields.
+                     Why: Ensures proper spacing and alignment. -->
+                <label for="email" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                <!-- What: 'form-control' styles the input field.
+                     Why: Provides consistent padding, sizing, and borders. -->
+            </div>
+
+            <!-- Form Group with Password -->
+            <div class="form-group mb-3">
+                <label for="password" class="form-label">Password</label>
+                <input type="password" class="form-control" id="password" placeholder="Enter your password">
+            </div>
+
+            <!-- Form Group with Select -->
+            <div class="form-group mb-3">
+                <label for="options" class="form-label">Choose an option</label>
+                <select class="form-control" id="options">
+                    <option>Option 1</option>
+                    <option>Option 2</option>
+                    <option>Option 3</option>
+                </select>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+
+        <!-- Sticky Element Example -->
+        <div class="sticky-top mt-5 bg-warning p-3">
+            <!-- What: 'sticky-top' keeps this element in view while scrolling within its container.
+                 Why: Useful for elements like headers or navigation. -->
+            <p>This is a sticky element. It stays in view while scrolling.</p>
+        </div>
+
+        <!-- Fixed Element Example -->
+        <div class="fixed-bottom bg-dark text-white text-center py-2">
+            <!-- What: 'fixed-bottom' keeps the element fixed to the bottom of the viewport.
+                 Why: Useful for footer bars or always-visible buttons. -->
+            <p>This is a fixed footer. It remains at the bottom of the viewport.</p>
+        </div>
+    </div>
+
+    <!-- Cheat Sheet and Notes -->
+    <!-- 
+    Forms Cheat Sheet:
+    1. 'form-group': Wraps labels and inputs for consistent spacing and alignment.
+    2. 'form-control': Applies styles to input, textarea, and select elements.
+    3. 'form-label': A consistent style for form labels.
+    4. Other Elements:
+       - 'form-check': Used for checkboxes and radio buttons.
+       - 'form-floating': For floating labels.
+    
+    Sticky and Fixed Cheat Sheet:
+    1. 'sticky-top': Keeps the element sticky within its container.
+    2. 'fixed-top': Fixes the element to the top of the viewport.
+    3. 'fixed-bottom': Fixes the element to the bottom of the viewport.
+    -->
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Grid, Flexbox, and Image Utilities</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center">Bootstrap Examples: Grid, Flexbox, and Images</h1>
+
+        <!-- Grid System -->
+        <section class="my-5">
+            <h2>Bootstrap Grid System</h2>
+            <div class="row border p-3">
+                <!-- Cheat Sheet for Grid -->
+                <div class="col bg-light border">Default (col): Stretches to equal width in a row.</div>
+                <div class="col bg-light border">Default (col): Works on mobile screens by default.</div>
+            </div>
+            <div class="row border p-3 mt-3">
+                <div class="col-sm bg-warning border">col-sm: For small screens and up (≥576px).</div>
+                <div class="col-sm bg-warning border">col-sm: Adjusts width accordingly.</div>
+            </div>
+            <div class="row border p-3 mt-3">
+                <div class="col-md bg-info border">col-md: For medium screens and up (≥768px).</div>
+                <div class="col-md bg-info border">col-md: Changes layout at medium breakpoints.</div>
+            </div>
+        </section>
+
+        <!-- Flexbox Layout -->
+        <section class="my-5">
+            <h2>Flexbox Layout</h2>
+            <div class="d-flex border p-3 bg-light mb-3">
+                <div>Item 1</div>
+                <div class="ms-auto">Item 2 (End aligned using ms-auto)</div>
+            </div>
+            <div class="d-flex justify-content-end border p-3 bg-light mb-3">
+                <div>Item 1</div>
+                <div>Item 2</div>
+            </div>
+            <div class="d-flex justify-content-md-end border p-3 bg-light mb-3">
+                <div>Item 1</div>
+                <div>Item 2 (Justify content only on medium screens and up)</div>
+            </div>
+        </section>
+
+        <!-- Image Utilities -->
+        <section class="my-5">
+            <h2>Image Utilities</h2>
+            <div>
+                <img src="https://via.placeholder.com/150" class="img-fluid" alt="Responsive Image Example">
+                <p class="mt-2">Above is an <code>img-fluid</code> image: It scales responsively to fit its container.</p>
+            </div>
+            <div class="mt-3">
+                <img src="https://via.placeholder.com/150" class="rounded" alt="Rounded Image Example">
+                <p class="mt-2">Above is a <code>rounded</code> image: It applies border-radius for rounded corners.</p>
+            </div>
+        </section>
+    </div>
+
+    <!-- Cheat Sheets and Notes -->
+    <!-- 
+    Grid System Cheat Sheet:
+    1. Default 'col': Equal-width columns for all screen sizes (mobile-first).
+    2. 'col-sm': Applies for small screens (≥576px) and above.
+    3. 'col-md': Applies for medium screens (≥768px) and above.
+    4. Responsive Breakpoints: lg (≥992px), xl (≥1200px), xxl (≥1400px).
+    5. Combine sizes, e.g., 'col-sm-6 col-md-4' for responsive layouts.
+
+    Flexbox Cheat Sheet:
+    1. 'd-flex': Enables flexbox for a container.
+    2. 'justify-content-*': Aligns items horizontally (start, end, center, between, around).
+    3. 'align-items-*': Aligns items vertically (start, end, center, stretch, baseline).
+    4. Responsive variants: e.g., 'justify-content-md-end' for medium screens and up.
+    5. 'ms-auto': Pushes an item to the end (left-to-right layout).
+
+    Image Utilities Cheat Sheet:
+    1. 'img-fluid': Makes the image responsive (width 100%, height auto).
+    2. 'rounded': Applies rounded corners (border-radius: 0.25rem).
+    3. 'rounded-circle': Makes the image a perfect circle.
+    4. 'img-thumbnail': Adds borders and padding for a styled image.
+
+    Notes:
+    - Combine utilities for complex designs, e.g., 'd-flex justify-content-between align-items-center'.
+    - Use browser dev tools to test responsiveness by resizing.
+    -->
+</body>
+</html>

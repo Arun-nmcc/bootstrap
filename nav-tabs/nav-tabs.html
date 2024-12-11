@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Tabs and Pills Example</title>
+  <!-- Bootstrap CSS -->
+  <link 
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" 
+    rel="stylesheet">
+</head>
+<body>
+  <div class="container mt-5">
+    
+    <!-- Horizontal Tabs -->
+    <h3>Horizontal Tabs</h3>
+    <!-- 
+      'nav': Base class for creating navigational components like tabs or pills.
+      'nav-tabs': Styles the navigation as horizontal tabs with borders.
+    -->
+    <ul class="nav nav-tabs">
+      <li class="nav-item">
+        <!-- 
+          'nav-item': Defines each tab as an individual navigation item.
+          'nav-link': Styles the tab link.
+          'active': Highlights the currently selected tab.
+          'data-bs-toggle="tab"': Enables tab switching functionality.
+          'data-bs-target': Connects this tab to the content pane with the corresponding id.
+        -->
+        <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#allTasks" type="button">All Tasks</button>
+      </li>
+      <li class="nav-item">
+        <button class="nav-link" data-bs-toggle="tab" data-bs-target="#completedTasks">Completed Tasks</button>
+      </li>
+      <li class="nav-item">
+        <button class="nav-link" data-bs-toggle="tab" data-bs-target="#pendingTasks">Pending Tasks</button>
+      </li>
+    </ul>
+    <!-- 
+      'tab-content': Wraps the content sections for the tabs.
+      'tab-pane': Defines each content pane for a tab.
+      'fade': Adds a fade-in animation when switching tabs.
+      'show active': Makes the content pane visible by default.
+    -->
+    <div class="tab-content">
+      <div class="tab-pane fade show active" id="allTasks">
+        <p>All the tasks will be displayed here.</p>
+      </div>
+      <div class="tab-pane fade" id="completedTasks">
+        <p>Completed tasks will be displayed here.</p>
+      </div>
+      <div class="tab-pane fade" id="pendingTasks">
+        <p>Pending tasks will be displayed here.</p>
+      </div>
+    </div>
+
+    <!-- Vertical Tabs -->
+    <h3 class="mt-5">Vertical Tabs</h3>
+    <div class="row">
+      <div class="col-md-3">
+        <!-- 
+          'nav': Base class for navigation.
+          'nav-pills': Styles the navigation links as pills.
+          'flex-column': Aligns the navigation links vertically in a column.
+        -->
+        <ul class="nav nav-pills flex-column">
+          <li class="nav-item">
+            <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#verticalAllTasks" type="button">All Tasks</button>
+          </li>
+          <li class="nav-item">
+            <button class="nav-link" data-bs-toggle="tab" data-bs-target="#verticalCompletedTasks">Completed Tasks</button>
+          </li>
+          <li class="nav-item">
+            <button class="nav-link" data-bs-toggle="tab" data-bs-target="#verticalPendingTasks">Pending Tasks</button>
+          </li>
+        </ul>
+      </div>
+      <div class="col-md-9">
+        <!-- 
+          'tab-content': Wraps the content sections for vertical tabs.
+          'tab-pane': Individual content pane.
+          'fade': Adds a fade animation.
+          'show active': Makes the first content pane visible by default.
+        -->
+        <div class="tab-content">
+          <div class="tab-pane fade show active" id="verticalAllTasks">
+            <p>All tasks will be displayed here.</p>
+          </div>
+          <div class="tab-pane fade" id="verticalCompletedTasks">
+            <p>Completed tasks will be displayed here.</p>
+          </div>
+          <div class="tab-pane fade" id="verticalPendingTasks">
+            <p>Pending tasks will be displayed here.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Pills Navigation -->
+    <h3 class="mt-5">Pills Navigation</h3>
+    <!-- 
+      'nav-pills': Styles the navigation links as pill-shaped buttons.
+    -->
+    <ul class="nav nav-pills">
+      <li class="nav-item">
+        <button class="nav-link active" data-bs-toggle="pill" data-bs-target="#pillAllTasks" type="button">All Tasks</button>
+      </li>
+      <li class="nav-item">
+        <button class="nav-link" data-bs-toggle="pill" data-bs-target="#pillCompletedTasks">Completed Tasks</button>
+      </li>
+      <li class="nav-item">
+        <button class="nav-link" data-bs-toggle="pill" data-bs-target="#pillPendingTasks">Pending Tasks</button>
+      </li>
+    </ul>
+    <!-- 
+      'tab-content': Container for pill content panes.
+      'tab-pane': Individual content pane.
+      'fade': Adds fade animation.
+      'show active': Makes the first pane visible by default.
+    -->
+    <div class="tab-content">
+      <div class="tab-pane fade show active" id="pillAllTasks">
+        <p>All tasks will be displayed here.</p>
+      </div>
+      <div class="tab-pane fade" id="pillCompletedTasks">
+        <p>Completed tasks will be displayed here.</p>
+      </div>
+      <div class="tab-pane fade" id="pillPendingTasks">
+        <p>Pending tasks will be displayed here.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS link to enable interactive components like tabs and pills -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

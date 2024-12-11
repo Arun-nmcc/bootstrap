@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Pagination and Tooltips Example</title>
+  <!-- Bootstrap CSS -->
+  <link 
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" 
+    rel="stylesheet">
+</head>
+<body>
+  <div class="container mt-5">
+    
+    <!-- Pagination -->
+    <!-- Pagination: Essential for navigating through large data sets or long lists -->
+    <h3>Pagination</h3>
+    <nav>
+      <!-- 
+        'pagination': Styles the unordered list as a pagination control.
+        'justify-content-center': Centers the pagination in the parent container.
+        'mt-4': Adds margin to the top for spacing.
+      -->
+      <ul class="pagination justify-content-center mt-4">
+        <!-- 
+          'page-item': Wraps each pagination link as an item in the control.
+          'page-link': Styles the individual link/button.
+        -->
+        <li class="page-item">
+          <a class="page-link" href="#">Previous</a>
+        </li>
+        <li class="page-item">
+          <a class="page-link active" href="#">1</a>
+          <!-- 'active': Highlights the currently selected page. -->
+        </li>
+        <li class="page-item">
+          <a class="page-link" href="#">2</a>
+        </li>
+        <li class="page-item">
+          <a class="page-link" href="#">3</a>
+        </li>
+        <li class="page-item">
+          <a class="page-link disabled" href="#">Next</a>
+          <!-- 'disabled': Disables the link to indicate it is not clickable. -->
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Tooltips -->
+    <!-- Tooltips: Provides additional information when the user hovers over an element -->
+    <h3 class="mt-5">Tooltips</h3>
+    <!-- 
+      'btn btn-info': Styles the button with Bootstrap's "info" color scheme.
+      'data-bs-toggle="tooltip"': Enables the tooltip functionality for this element.
+      'data-bs-title': Defines the text that will be displayed in the tooltip.
+      'data-bs-placement="top"': Positions the tooltip above the element.
+    -->
+    <button class="btn btn-info mt-4" 
+            data-bs-toggle="tooltip" 
+            data-bs-title="Navigating to Documents Page" 
+            data-bs-placement="top">
+      Go to Documents
+    </button>
+
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    /* 
+      This script initializes tooltips on all elements that have the attribute 'data-bs-toggle="tooltip"'.
+      
+      1. 'querySelectorAll': Selects all elements with 'data-bs-toggle="tooltip"' in the document.
+         - Example: The button in this document.
+
+      2. 'tooltipTriggerList': Converts the NodeList returned by 'querySelectorAll' into an array.
+
+      3. 'map': Iterates over each element in 'tooltipTriggerList' and creates a new Bootstrap Tooltip instance.
+         - 'bootstrap.Tooltip': A Bootstrap class that enables tooltip functionality.
+
+      This script ensures tooltips are functional across the entire page without needing manual initialization for each element.
+    */
+    const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
+    const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl));
+  </script>
+</body>
+</html>

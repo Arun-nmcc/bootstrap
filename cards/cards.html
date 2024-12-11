@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Cards Example</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center">Bootstrap Cards</h1>
+
+        <!-- What: Cards are versatile containers for grouping and displaying content such as text, images, and links.
+             Why: They help create modular, consistent, and responsive layouts for web content. -->
+
+        <!-- Simple Card -->
+        <div class="card my-3">
+            <!-- What: The 'card' class defines the container for card content. -->
+            <!-- Why: It serves as the outermost wrapper for content within a card. -->
+            <div class="card-body">
+                <!-- What: The 'card-body' contains the main content of the card. -->
+                <!-- Why: It provides padding and styles for the enclosed content. -->
+                <h5 class="card-title">Card Title</h5>
+                <!-- What: 'card-title' is used for the heading or title of the card. -->
+                <!-- Why: It differentiates headings from other text within the card. -->
+                <p class="card-text">This is a simple card with a title and text content.</p>
+                <!-- What: 'card-text' is used for descriptive or secondary text inside the card. -->
+                <!-- Why: It ensures consistent typography and spacing. -->
+            </div>
+        </div>
+
+        <!-- Card with Image -->
+        <div class="card my-3">
+            <img src="https://via.placeholder.com/300x150" class="card-img-top" alt="Example Image">
+            <!-- What: 'card-img-top' is used for adding an image to the top of the card. -->
+            <!-- Why: It provides a consistent way to include visuals in cards. -->
+            <div class="card-body">
+                <h5 class="card-title">Card with Image</h5>
+                <p class="card-text">This card includes an image at the top for visual enhancement.</p>
+            </div>
+        </div>
+
+        <!-- Card with Footer -->
+        <div class="card my-3">
+            <div class="card-body">
+                <h5 class="card-title">Card with Footer</h5>
+                <p class="card-text">This card has a footer section for additional information or links.</p>
+            </div>
+            <div class="card-footer text-muted">Footer Content</div>
+            <!-- What: 'card-footer' is a section for placing content like metadata or links at the bottom of the card. -->
+            <!-- Why: It keeps footer elements visually distinct from the main content. -->
+        </div>
+
+        <!-- Grouped Cards -->
+        <div class="card-group">
+            <!-- What: 'card-group' groups multiple cards together for a cohesive layout. -->
+            <!-- Why: It aligns cards evenly and maintains consistent spacing. -->
+            <div class="card">
+                <img src="https://via.placeholder.com/100x100" class="card-img-top" alt="Example Image">
+                <div class="card-body">
+                    <h5 class="card-title">Card 1</h5>
+                    <p class="card-text">Content for the first card.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://via.placeholder.com/100x100" class="card-img-top" alt="Example Image">
+                <div class="card-body">
+                    <h5 class="card-title">Card 2</h5>
+                    <p class="card-text">Content for the second card.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://via.placeholder.com/100x100" class="card-img-top" alt="Example Image">
+                <div class="card-body">
+                    <h5 class="card-title">Card 3</h5>
+                    <p class="card-text">Content for the third card.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Additional Notes -->
+    <!-- 
+    1. What: Cards are reusable components that help structure and display content in a visually organized way.
+    2. Why: They improve content readability, provide consistent styles, and are easy to integrate with responsive layouts.
+    3. Other Features:
+        - Cards can be combined with utility classes for customization.
+        - Cards can include lists, buttons, and other interactive elements.
+    -->
+</body>
+</html>
